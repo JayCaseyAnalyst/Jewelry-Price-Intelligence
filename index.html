@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Price Intelligence</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .hero {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .stat-card {
+            background: #f2f4f7;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            background: #f4f4f4;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .price-drop {
+            color: green;
+            font-weight: bold;
+        }
+
+        .email-form {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        input[type="email"] {
+            padding: 12px;
+            flex: 1;
+            min-width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            background: black;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: .9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: .9rem;
+        }
+
+        .disclaimer {
+            font-size: .85rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <section class="hero">
+        <h1>Jewelry Price Intelligence</h1>
+
+        <p class="subtitle">
+            Track engagement ring and jewelry price changes across major retailers.
+        </p>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">1,267</div>
+                <div>Products Tracked</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">37</div>
+                <div>Price Changes Today</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">$198</div>
+                <div>Largest Savings Today</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Latest Price Drops</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>SKU</th>
+                    <th>Product</th>
+                    <th>Previous Price</th>
+                    <th>Current Price</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>282350507</td>
+                    <td>Round Diamond Solitaire Bezel-Set Engagement Ring</td>
+                    <td>$990</td>
+                    <td class="price-drop">$792</td>
+                    <td>$198</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <section class="card">
+        <h2>Get Price Alerts</h2>
+
+        <p>
+            Receive notifications for major price drops and new all-time lows.
+        </p>
+
+        <form class="email-form">
+            <input
+                type="email"
+                placeholder="Enter your email address">
+            <button type="submit">
+                Subscribe
+            </button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>About</h2>
+
+        <p>
+            Jewelry Price Intelligence tracks publicly available jewelry pricing
+            and historical price movements to help shoppers identify meaningful
+            discounts and buying opportunities.
+        </p>
+
+        <p class="disclaimer">
+            Disclaimer: Jewelry Price Intelligence is an independent website and
+            is not affiliated with, endorsed by, or sponsored by Jared The
+            Galleria of Jewelry or any other retailer.
+        </p>
+    </section>
+
+    <footer>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Use</a>
+</footer>
+
+</div>
+
+</body>
+</html>
